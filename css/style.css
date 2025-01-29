@@ -1,0 +1,147 @@
+/* make the lyrics in a scroll box. link to scrollbox: */
+#scrollBox { /* https://jsbin.com/ifolaf/2/edit?html,css,output */
+    border: 1px solid black;
+
+    height: 800px;
+    overflow: auto;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 100px;
+
+    background-color: rgba(255, 255, 255, 0.5); /* puts a transparent white backgroubnd behind the text */
+}
+
+html{ /* have the background be a pink a blue gradient */
+    background-image: linear-gradient(rgb(78, 67, 225), rgb(248, 81, 190));
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@font-face { /* link the arcane font */
+    font-family: "Arcane Nine";
+    src: url("../fonts/Arcane\ Nine.otf");
+    font-weight: auto;
+}
+
+main{ /*put the text in the center and add the show's music video in the background behind the text */
+    text-align: center;
+    background-image: url(../img/mv.png);
+    background-size: 1200px 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.introOutro p{ /* make the text smaller than the rest of the song. and white with a blue text shadow*/
+    font-family: "Carattere", serif; /* carattere font from google fonts*/
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 4px 4px 6px rgba(89, 133, 204, 0.8);
+    color:aliceblue
+}
+
+
+h2{ /* give the h2 the arcane font in a similar style to the logo */
+    text-align: center;
+    font-family: "Arcane Nine";
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: rgb(185, 145, 24);
+    text-shadow: 4px 4px rgba(104, 79, 8, 0.8);
+
+}
+
+img{ /* background image  */
+    height: 50%;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{ /* give the h1 the arcane font in a similar style to the logo like the h2 */
+    text-align: center;
+    font-family: "Arcane Nine";
+    letter-spacing: 3px;
+    color: rgb(185, 148, 37);
+    text-shadow: 4px 4px rgba(131, 97, 3, 0.8);
+}
+
+.stromae{ /* colour code stromae's parts of the song to be blue */
+    font-family: "Croissant One", serif; /* croissant one font from google fonts for the stromae parts of the song */
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6em;
+    color: rgb(45, 11, 179);
+    text-shadow: 4px 4px 6px rgba(52, 25, 160, 0.8);
+}
+
+.pomme{ /* colour code pomme's parts of the song to be pink */
+    font-family: "Playwrite GB J", serif; /* playwrite gb j google font for pomme's part of the song */
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.5em;
+    color: rgb(213, 16, 127);
+    text-shadow: 4px 4px 4px rgba(255, 99, 234, 0.8);
+}
+
+.stromaeAndPomme{ /* when stromae and pomme sing together, make the text purple to show a mix of both colours */
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7em;
+    letter-spacing: 1.75px;
+    color:rgb(117, 19, 141);
+    text-shadow: 4px 4px 4px rgba(120, 36, 184, 0.633);
+    
+
+}
+
+/* changing style for more emphasised parts, making the colours of the words lighter to indicate tone*/
+.pomme mark{ 
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(218, 8, 222);
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 4px 4px 4px rgba(244, 143, 234, 0.8);
+    font-size: 1.53em;
+}
+
+.stromae mark{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(8, 179, 222);
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 4px 4px 4px rgba(156, 239, 242, 0.8);
+    font-size: 1.53em;
+}
+
+.stromae span{ 
+    text-decoration: underline;
+    font-style: oblique;
+    color: rgb(162, 186, 192);
+}
+
+.stromaeAndPomme mark{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(180, 16, 217);
+    text-decoration: underline;
+    text-shadow: 4px 4px 4px rgba(229, 127, 245, 0.8);
+    font-size: 1.5em;
+}
+
+footer{ /* arcane font for footer */
+    text-align: center;
+    font-family: "Arcane Nine";
+    letter-spacing: 3px;
+    color: rgb(185, 148, 37);
+    text-shadow: 4px 4px rgba(131, 97, 3, 0.8);
+}
+
+video{
+    display: block;
+    margin: 0 auto;
+}
